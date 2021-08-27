@@ -1,31 +1,31 @@
-import React, {useState} from 'react'
-import { NavLink } from 'react-router-dom'
-import { Container } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { NavLink } from 'react-router-dom';
+import { Card, CardMedia, CardHeader, CardContent } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 
-const useStyles = makeStyles({
-  img: {
-    width: 100,
-    height: 100,
-  }
-})
+const DepartmentList = ({ department }) => {
+  return (
+    <div>
+      <Card>
+        <CardHeader
+          title={department.title}
+        />
 
-const DepartmentList = ({props}) => {
-  console.log(props);
-  const classes = useStyles();
+        <CardMedia
+          component='img'
+          style={{ height: 200, width: '100%', paddingTop: '1%', }}
+          src={department.imageUrl}
+        ></CardMedia>
 
-  return ( 
-    <Container>
-      <Typography variant="h6" component="h2">
-        {props.title}
-      </Typography>
-      <p>{props.description}</p>
-      <NavLink to={`/department/${props._id}`}>Teams</NavLink>
-      <NavLink to={`/department/${props._id}`}>Projects</NavLink>
-      <img className={classes.img} src={props.imageUrl} alt="" />
-    </Container>
-   );
-}
- 
+        <CardContent>
+          <Typography variant="body2">
+            {department.description}
+          </Typography>
+        </CardContent>
+        <NavLink to={`/departments/${department._id}`}>Teams</NavLink>
+        <NavLink to={`/departments/${department._id}`}>Projects</NavLink>
+      </Card>
+    </div>
+  );
+};
+
 export default DepartmentList;

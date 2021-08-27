@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom'
 import Departments from './components/departments'
 import Projects from './components/projects'
@@ -15,9 +14,7 @@ function App() {
         <Route path="/projects/:id">
           <Projects />
         </Route>
-        <Route path="/department/:id">
-          <DepartmentDetails />
-        </Route>
+        <Route exact path="/departments/:id" component={DepartmentDetails} />
       </Switch>
 
     </Router>

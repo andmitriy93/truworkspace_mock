@@ -64,7 +64,7 @@ export const departments = [
   {
     _id: 'd2',
     title: 'Accounting',
-    description: '',
+    description: 'Some description',
     projects: [projects[1]],
     teams: [teams[1], teams[2]],
     imageUrl: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
@@ -85,9 +85,9 @@ export const departments = [
     teams: [teams[4]],
     imageUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80',
   },
-  { _id: 'd5', title: 'Recruiting', description: '', projects: [projects[4]], teams: [teams[5]], imageUrl: 'https://images.unsplash.com/photo-1603834305747-b0fb6f8bbfd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80' },
-  { _id: 'd6', title: 'Customer Service', description: '', projects: [], teams: [teams[6]], imageUrl: 'https://images.unsplash.com/photo-1544717301-9cdcb1f5940f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80' },
-  { _id: 'd7', title: 'Security', description: '', projects: [], teams: [teams[7]], imageUrl: 'https://images.unsplash.com/photo-1618371690240-e0d46eead4b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80' },
-  { _id: 'd8', title: 'Maintainence', description: '', projects: [], teams: [], imageUrl: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fnortheastsecuritysolutions.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fmaintenance-1151312_960_720.png&sp=1630097306T05f1d96c94b81c55bc24e2ee4f57678c1c01afba0a866a3883d08d70a8452bf0' },
-  { _id: 'd9', title: 'Support', description: '', projects: [], teams: [], imageUrl: 'https://images.unsplash.com/photo-1617080090911-91409e3496ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1045&q=80' },
+  { _id: 'd5', title: 'Recruiting', description: 'Some description for recruiting department', projects: [projects[4]], teams: [teams[5]], imageUrl: 'https://images.unsplash.com/photo-1603834305747-b0fb6f8bbfd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80' },
+  { _id: 'd6', title: 'Customer Service', description: 'Some description for the Customer Service department', projects: [], teams: [teams[6]], imageUrl: 'https://images.unsplash.com/photo-1544717301-9cdcb1f5940f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80' },
+  { _id: 'd7', title: 'Security', description: 'Some description for the Security department', projects: [], teams: [teams[7]], imageUrl: 'https://images.unsplash.com/photo-1618371690240-e0d46eead4b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80' },
+  { _id: 'd8', title: 'Maintainence', description: 'Some description for the Maintainence department', projects: [], teams: [], imageUrl: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fnortheastsecuritysolutions.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fmaintenance-1151312_960_720.png&sp=1630097306T05f1d96c94b81c55bc24e2ee4f57678c1c01afba0a866a3883d08d70a8452bf0' },
+  { _id: 'd9', title: 'Support', description: 'Some description for the Support department', projects: [], teams: [], imageUrl: 'https://images.unsplash.com/photo-1617080090911-91409e3496ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1045&q=80' },
 ]
