@@ -8,12 +8,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Departments />
-        </Route>
-        <Route path="/projects/:id">
-          <Projects />
-        </Route>
+        <Route exact path="/" component={Departments} />
+        <Route path="/projects/:id" component={Projects} />
         <Route exact path="/departments/:id" component={DepartmentDetails} />
       </Switch>
 
