@@ -2,8 +2,8 @@ import { Card, CardMedia, CardHeader, CardContent } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import { Link } from '@material-ui/core';
 import { Box } from '@material-ui/core';
-import { IconButton } from '@material-ui/core';
-import { Button } from '@material-ui/core';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
 
 const DepartmentList = ({ department }) => {
   console.log(department);
@@ -11,16 +11,9 @@ const DepartmentList = ({ department }) => {
     <Card elevation={3}>
       <CardHeader
         action={
-          <Button
-            sx={{
-              mt: 2,
-              ':hover': {
-                backgroundColor: 'Orange',
-              },
-            }}
-          >
-            check
-          </Button>
+            <Link href={`/departments/${department._id}`} variant='body1'>
+              <ArrowForwardIcon fontSize="medium" color="primary.main" />
+            </Link>
         }
         title={department.title}
       />
