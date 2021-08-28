@@ -2,13 +2,28 @@ import { Card, CardMedia, CardHeader, CardContent } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import { Link } from '@material-ui/core';
 import { Box } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 const DepartmentList = ({ department }) => {
-
-  console.log(department)
+  console.log(department);
   return (
     <Card elevation={3}>
-      <CardHeader title={department.title} />
+      <CardHeader
+        action={
+          <Button
+            sx={{
+              mt: 2,
+              ':hover': {
+                backgroundColor: 'Orange',
+              },
+            }}
+          >
+            check
+          </Button>
+        }
+        title={department.title}
+      />
 
       <CardMedia
         component='img'
@@ -18,12 +33,12 @@ const DepartmentList = ({ department }) => {
 
       <CardContent>
         <Typography color='textSecondary'>{department.description}</Typography>
-        <Box component="span" >
+        <Box component='span'>
           <Link href={`/departments/${department._id}`} variant='body1'>
             Teams
           </Link>
         </Box>
-        <Box component="span" pl={27}>
+        <Box component='span' pl={27}>
           <Link href={`/projects/${department._id}`} variant='body1'>
             Projects
           </Link>

@@ -32,7 +32,7 @@ const Projects = ({ match }) => {
   let department = departments.find((dep) => dep._id === match.params.id);
 
   const projects = department.projects[0];
-  console.log(projects);
+  // console.log(projects);
   // console.log(department)
   // console.log(departments[1].projects[0])
   // console.log(match.params.id)

@@ -18,9 +18,9 @@ const useStyles = makeStyles((theme) => ({
 
 const DepartmentDetails = ({match}) => {
   const classes = useStyles();
-  const department = departments.find(dep => {
-    return (match.params.id)
-  }) 
+
+  let department = departments.find((dep) => dep._id === match.params.id);
+
 
 
   console.log(department)
