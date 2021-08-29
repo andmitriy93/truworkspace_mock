@@ -1,9 +1,8 @@
-import React from 'react';
-import { departments } from '../mocks';
+import { departments} from '../mocks';
 import { makeStyles } from '@material-ui/styles';
 import { Container, Paper, Typography } from '@material-ui/core';
 import { Box } from '@material-ui/system';
-import { CardMedia, Card, CardHeader } from '@material-ui/core';
+import { CardMedia, CardHeader } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {

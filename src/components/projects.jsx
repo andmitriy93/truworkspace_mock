@@ -1,4 +1,3 @@
-import React from 'react';
 import { departments } from '../mocks';
 import { Card, CardMedia, CardHeader } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
@@ -40,7 +39,7 @@ const Projects = ({ match }) => {
   return (
     <Container className={classes.wrapper}>
       <Card className={classes.root} elevation={3}>
-        <CardHeader title={`${department.title}` + ' ' + 'Projects'} />
+        <CardHeader title={`${department.title} + ' ' + 'Projects'`} />
 
         <Box display='flex' flexDirection='row'>
           <Box pl={2} py={2}>

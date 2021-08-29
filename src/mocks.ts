@@ -1,14 +1,3 @@
-export const teams = [
-  { title: 'Green Rangers', _id: '1', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'Red Rangers', _id: '2', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'Orange Rangers', _id: '3', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'Purple Rangers', _id: '7', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'Grey Rangers', _id: '8', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'White Rangers', _id: '9', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'Blue Rangers', _id: '10', description: '', departments: [], people: [], projects: [], owner: null },
-  { title: 'Teal Rangers', _id: '4', description: '', departments: [], people: [], projects: [], owner: null },
-]
-
 export const projects = [
   {
     _id: '123',
@@ -50,6 +39,17 @@ export const projects = [
     status: 'In Progress',
     percentComplete: 15,
   },
+]
+
+export const teams = [
+  { title: 'Green Rangers', _id: '1', description: 'We are rangers', departments: [], people: ['A', 'B'], projects: [projects[1]], owner: 'Danielle' },
+  { title: 'Red Rangers', _id: '2', description: 'We are rangers', departments: [], people: ['G', 'H'], projects: [projects[0]], owner: 'Danielle' },
+  { title: 'Orange Rangers', _id: '3', description: 'We are rangers', departments: [], people: ['S', 'T'], projects: [projects[2]], owner: 'Danielle' },
+  { title: 'Purple Rangers', _id: '7', description: 'We are rangers', departments: [], people: ['K', 'M'], projects: [projects[1]], owner: 'Danielle' },
+  { title: 'Grey Rangers', _id: '8', description: 'We are rangers', departments: [], people: ['O', 'E'], projects: [projects[3]], owner: 'Danielle' },
+  { title: 'White Rangers', _id: '9', description: 'We are rangers', departments: [], people: ['W', 'Y'], projects: [projects[0]], owner: 'Danielle' },
+  { title: 'Blue Rangers', _id: '10', description: 'We are rangers', departments: [], people: ['X', 'Z'], projects: [projects[2]], owner: 'Danielle' },
+  { title: 'Teal Rangers', _id: '4', description: 'We are rangers', departments: [], people: ['C', 'F'], projects: [projects[3]], owner: 'Danielle' },
 ]
 
 export const departments = [

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { departments } from '../mocks';
 import DepartmentList from './departmentList';
 import { Grid } from '@material-ui/core';

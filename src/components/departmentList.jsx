@@ -27,7 +27,7 @@ const DepartmentList = ({ department }) => {
       <CardContent>
         <Typography color='textSecondary'>{department.description}</Typography>
         <Box component='span'>
-          <Link href={`/departments/${department._id}`} variant='body1'>
+          <Link href={`/teams/${department._id}`} variant='body1'>
             Teams
           </Link>
         </Box>
