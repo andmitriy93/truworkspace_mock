@@ -39,7 +39,7 @@ const Projects = ({ match }) => {
   return (
     <Container className={classes.wrapper}>
       <Card className={classes.root} elevation={3}>
-        <CardHeader title={`${department.title} + ' ' + 'Projects'`} />
+        <CardHeader title={`${department.title}` + ' ' + 'Projects'} />
 
         <Box display='flex' flexDirection='row'>
           <Box pl={2} py={2}>
